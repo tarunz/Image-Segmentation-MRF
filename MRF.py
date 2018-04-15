@@ -148,7 +148,7 @@ while it>0:
         prob = 1.1
         if temp != 0:
             prob = np.exp((energy-newenergy)/temp)
-        if prob <= (randint(0,1000)+0.0)/1000:
+        if prob >= (randint(0,1000)+0.0)/1000:
             change = True
     
     if change:
